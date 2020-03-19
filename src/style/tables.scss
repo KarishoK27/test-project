@@ -1,0 +1,103 @@
+.table-container {
+    margin: 20px 43px;
+
+    .table-control {
+        text-align: right;
+        width: 100%;
+        margin-bottom: 13px;
+
+        .table-copy {
+            border: none;
+            border-radius: 3px;
+            background-color: #1493ff;
+            width: 91px;
+            height: 24px;
+
+            font-size: 12px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin: 0 15px;
+        }
+
+        .table-delete {
+            border: none;
+            background: url('../img/btn_delete.svg') no-repeat;
+            background-size: contain;
+            width: 12px;
+            height: 12px;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+
+
+
+        th {
+            background-color: #0a508c;
+            font-size: 14px;
+            color: rgb(165, 181, 203);
+            text-align: left;
+            font-weight: 400;
+            padding: 10px 15px;
+        }
+
+        th:first-child {
+            border-radius: 3px 0 0 0;
+        }
+
+        th:last-child {
+            border-radius: 0 3px 0 0;
+        }
+
+        th:only-child {
+            border-radius: 3px 3px 0 0;
+        }
+
+        td {
+            background-color: white;
+            height: 32px;
+            font-size: 12px;
+            color: rgb(79, 91, 101);
+            padding: 0 15px;
+            border-bottom: 1px solid rgb(200, 204, 212);
+            border-left: 1px solid rgb(200, 204, 212);
+        }
+
+        td:last-child {
+            border-right: 1px solid #c8ccd4;
+            text-align: center;
+        }
+
+
+        button {
+            border: none;
+            background-color: white;
+            text-decoration: underline;
+            margin: 8px auto;
+        }
+
+        .row-edit {
+            color: rgb(6, 124, 225);
+        }
+
+        .row-delete {
+            color: rgb(176, 35, 55);
+        }
+
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .table-container {
+        margin: 20px 0;
+    }
+
+    .table-container .table-control {
+        width: 90vw;
+    }
+}
